@@ -1,0 +1,369 @@
+.App {
+  color: rgb(47, 65, 65);
+}
+
+/* Result page */
+
+.result {
+  background-color: #fefefe;
+}
+.result-head {
+  margin: 2rem 2rem;
+  background-color: #70b9e6;
+  color: white;
+  border-radius: 1rem;
+  border-color: #3157d1;
+}
+
+.score-header {
+  margin-bottom: 2.5rem;
+}
+.cong-msg {
+  margin: 3rem auto 3rem auto;
+  color: #2c51af;
+}
+
+.showAns {
+  color: #1c8494;
+}
+.showAns:hover {
+  color: white;
+}
+.button {
+  padding: 1em 2em;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  transition: all 1000ms;
+  font-size: 15px;
+  position: relative;
+  overflow: hidden;
+  outline: 2px solid #2c9caf;
+}
+
+.button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+  outline: 2px solid #70bdca;
+  box-shadow: 4px 5px 17px -4px #268391;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  left: -50px;
+  top: 0;
+  width: 0;
+  height: 100%;
+  background-color: #2c9caf;
+  transform: skewX(45deg);
+  z-index: -1;
+  transition: width 1000ms;
+}
+
+button:hover::before {
+  width: 250%;
+}
+
+/* Review Page */
+
+.question {
+  margin: 0.2rem 1rem 2rem 0.5rem;
+  padding: 1rem;
+}
+
+.quesno {
+  background-color: rgb(213, 217, 217);
+  border-radius: 0.3rem;
+  padding: 0.5rem 1rem;
+}
+.que {
+  background-color: #f9f9f9;
+  padding: 1rem 0rem 1rem 1rem;
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+}
+.que p {
+  font-weight: 400;
+}
+.ans-badge {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 35%;
+  opacity: 0.9;
+  font-size: 19px !important;
+  font-weight: 400 !important;
+}
+@media screen and (max-width: 900px) {
+  .ans-badge {
+    width: 75%;
+  }
+}
+
+.wrong-ans {
+  background-color: #ff6b6b;
+}
+.other-ans {
+  background-color: #a7a7a7;
+}
+
+.corr-ans {
+  background-color: #4fdc6e;
+}
+
+/* Submission */
+
+.btn-submission {
+  width: 80px;
+}
+.emp-id {
+  background-color: #13447cb1 !important;
+  color: white;
+  border-radius: 0.3rem;
+  text-align: center;
+  border-color: #f5f8ff;
+  border-width: 10px;
+}
+.emp-name {
+  background-color: #5b137cba !important;
+  color: white;
+  border-radius: 0.3rem;
+  text-align: center;
+  border-color: #f5f8ff;
+  border-width: 10px;
+}
+
+.emp-sub {
+  background-color: #7c134ba6 !important;
+  color: white;
+  border-radius: 0.3rem;
+  text-align: center;
+  border-color: #f5f8ff;
+  border-width: 10px;
+}
+.emp-proName {
+  background-color: #efbd48d4 !important;
+  color: white;
+  border-radius: 0.3rem;
+  text-align: center;
+  border-color: #f5f8ff;
+  border-width: 10px;
+}
+.emp-status {
+  background-color: #e33ed8 !important;
+  color: white;
+  border-radius: 0.4rem;
+  text-align: center;
+  border-color: 2px solid white;
+  border-color: #f5f8ff;
+  border-width: 10px;
+}
+.submission td {
+  text-align: center;
+}
+/* evaluate */
+.evaluate {
+  background-color: #16226c;
+  height: 82vh;
+  border-radius: 1rem;
+}
+.checkbox-lg .form-check-input {
+  scale: 1.4;
+}
+.checkbox-lg {
+  margin-left: 0.8rem;
+}
+.evaluation {
+  background: linear-gradient(#fcfcfc, #9198e5);
+  padding-bottom: 2.6rem;
+}
+
+/*
+ leaderboard 
+ */
+
+.leaderboard-card {
+  height: 300px;
+  /* width: auto; */
+  margin: 0 auto;
+}
+.leaderboard-header {
+  height: 150px;
+  background-color: #dde3f2;
+  color: rgb(96, 93, 93);
+}
+.leaderboard-avatar {
+  width: 90px;
+  height: 90px;
+}
+.leaderboard-avatar-wrapper {
+  position: relative;
+  top: -40px;
+}
+.leaderboard-title {
+  margin-top: -40px;
+  font-size: 2rem;
+}
+.leaderboard-desc {
+  font-size: 1rem;
+  color: #a8a8a8;
+}
+
+.leaderboard-table-wrapper {
+  margin-top: 20px;
+}
+.leaderboard-table {
+  border-collapse: separate;
+  border-spacing: 0 15px;
+}
+.leaderboard-tr {
+  position: relative;
+  height: 80px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  box-shadow: 0px 5px 8px -2px rgb(218, 218, 218);
+}
+.leaderboard-td,
+.leaderboard-th {
+  border: none;
+  font-size: 1.2rem;
+}
+.leaderboard-table-avatar {
+  height: 50px;
+  width: 50px;
+}
+.leaderboard-table-name {
+  font-weight: bold;
+}
+.leaderboard-table-username {
+  font-size: 1rem;
+  color: #a8a8a8;
+}
+.score-alert {
+  text-align: center;
+}
+
+/* feedback submission */
+.feedback {
+  background-color: #e6f0f5;
+  border-radius: 1rem;
+  padding: 1rem;
+  font-size: large;
+  font-weight: 500;
+}
+
+/* Report  */
+
+.report-head {
+  background-color: #061f70;
+  color: white;
+  padding: 1rem 0rem;
+  text-align: center;
+}
+
+.empTable {
+  margin-left: 7rem;
+  width: 70%;
+}
+
+.report-body {
+  padding-top: 40px;
+}
+.empTable td {
+  cursor: pointer;
+}
+
+/* Chapter report */
+
+.select {
+  position: relative;
+  overflow: visible;
+  display: block;
+  margin: auto;
+  width: 300px;
+  height: 70px;
+  z-index: 10;
+  margin-right: 3rem;
+  border-bottom: 0px;
+  border-radius: 30px;
+  box-shadow: 0px 1em 2em -1.5em rgba(0, 0, 0, 0.5);
+}
+
+.select .title,
+.select .placeholder {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  padding: 1.5em 2em;
+  background: rgb(74, 164, 220);
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+  cursor: pointer;
+  color: #010411;
+}
+.select > input {
+  position: absolute;
+
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.select > input:checked div.options label.option .title {
+  display: none !important;
+}
+.select > input:not(:checked) {
+  z-index: 4;
+}
+.select > input:not(:checked) ~ label.option > span.title {
+  display: none;
+}
+
+.select label.option {
+  display: block;
+  overflow: hidden;
+  z-index: 1;
+  width: 100%;
+  transition: all 1s ease-out;
+}
+.select label.option span.title:hover {
+  color: rgb(248, 248, 248);
+  background: rgb(34, 36, 185);
+  box-shadow: inset 0px 1px 0px rgba(0, 0, 0, 0);
+  border-radius: 10px;
+}
+.select label.option input {
+  display: none;
+}
+.select label.option input:checked ~ span.title {
+  position: absolute;
+  display: block;
+  z-index: 3;
+  top: 0px;
+  background: rgb(153, 174, 222);
+  border-top: 0px;
+  box-shadow: none;
+  color: inherit;
+  width: 100%;
+  border-radius: 10px;
+  color: rgb(20, 31, 153);
+}
+
+/* Overview Table */
+
+/* Quiz report front */
+
+.quiz-report-front {
+  background-color: #f9f9f9;
+  margin: 3rem 3rem;
+}
+
+.quiz-report-front .btn {
+  margin: 2rem;
+}

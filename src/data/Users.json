@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+       
+        "name": "guru",
+        "email":"guru@gmail.com",
+        "phone":"0771234567",
+        "status":"Active"
+    },
+    {
+        "id": 2,
+        "name": "ishu",
+        "email":"ishu@gmail.com",
+        "phone":"0776734567",
+        "status":"In active"
+    },
+    
+    {
+        "id": 3,
+        "name": "abi",
+        "email":"abi@gmail.com",
+        "phone":"0775674567",
+        "status":"Active"
+      
+    },
+    
+    {
+        "id": 4,
+        "name": "sasi",
+        "email":"sasi@gmail.com",
+        "phone":"0767234567",
+        "status":"InActive"
+        
+    }]
+    
